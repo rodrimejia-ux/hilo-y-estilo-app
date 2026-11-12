@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class formulario_de_solicitud extends AppCompatActivity {
+public class Formulario_de_solicitud extends AppCompatActivity {
 
     private EditText etBuscar, etNombre, etCorreo, etMaterial, etCantidad;
     private Button btnConfirmar;
@@ -50,9 +50,9 @@ public class formulario_de_solicitud extends AppCompatActivity {
             String cantidad = etCantidad.getText().toString().trim();
 
             if (nombre.isEmpty() || correo.isEmpty() || material.isEmpty() || cantidad.isEmpty()) {
-                Toast.makeText(formulario_de_solicitud.this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Formulario_de_solicitud.this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(formulario_de_solicitud.this,
+                Toast.makeText(Formulario_de_solicitud.this,
                         "¡Pedido de " + material + " (" + cantidad + " unid.) confirmado para " + nombre + "!",
                         Toast.LENGTH_LONG).show();
             }

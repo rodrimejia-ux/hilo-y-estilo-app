@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class hilo extends AppCompatActivity {
+public class Hilo extends AppCompatActivity {
 
     // Declaración de los elementos de UI
     private ImageView imgAlgodon, imgPoliester, imgNylon, imgSeda, imgLana;
@@ -24,8 +24,8 @@ public class hilo extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_hilo);
 
-        // Ajuste automático de los márgenes de la pantalla (EdgeToEdge)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainScroll), (v, insets) -> {
+        // CORREGIDO: Ahora busca "mainLayout" que es el ID correcto de tu LinearLayout raíz en el XML
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainLayout), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -68,7 +68,7 @@ public class hilo extends AppCompatActivity {
     private void navegarAFormulario(String nombreMaterial) {
         Toast.makeText(this, "Seleccionaste: " + nombreMaterial, Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(hilo.this, formulario_de_solicitud.class);
+        Intent intent = new Intent(Hilo.this, Formulario_de_solicitud.class);
         intent.putExtra("MATERIAL_SELECCIONADO", nombreMaterial);
         startActivity(intent);
     }
