@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f172a"
+    tools:context=".FormularioTelas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#1e293b"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SOLICITAR TELA"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="20dp"
+                android:text="Completa los datos para solicitar una cotización."
+                android:textColor="#94a3b8"
+                android:textSize="12sp" />
+
+            <!-- Nombre del cliente -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre completo"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="Ingresa tu nombre"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Correo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="ejemplo@correo.com"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número de teléfono"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="Ingresa tu teléfono"
+                android:inputType="phone"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Empresa o taller -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empresa o taller (opcional)"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="Nombre de tu empresa o taller"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Tipo de tela -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de tela"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etTipoTela"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="Ej. Algodón, poliéster, seda..."
+                android:inputType="textCapWords"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Color -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color de la tela"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etColor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#334155"
+                android:hint="Ej. Negro, blanco, azul..."
+                android:inputType="textCapWords"
+                android:paddingHorizontal="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Cantidad y unidad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad"
+                        android:textColor="#cbd5e1"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etCantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#334155"
+                        android:hint="Ej. 20"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="#94a3b8"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unidad"
+                        android:textColor="#cbd5e1"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etUnidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#334155"
+                        android:hint="Metros"
+                        android:inputType="text"
+                        android:paddingHorizontal="12dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="#94a3b8"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Observaciones -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observaciones adicionales"
+                android:textColor="#cbd5e1"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="#334155"
+                android:gravity="top"
+                android:hint="Escribe alguna característica o detalle de tu solicitud..."
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#94a3b8"
+                android:textSize="14sp" />
+
+            <!-- Botón -->
+            <Button
+                android:id="@+id/btnEnviarSolicitud"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Enviar solicitud"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#0284c7" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
