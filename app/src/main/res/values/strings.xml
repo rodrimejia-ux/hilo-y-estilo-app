@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">hilo y estilo app</string>
+    <string name="app_name">Hilo y Estilo</string>
+    <string name="title_envios_nacionales">📍 Envíos Nacionales</string>
+    <string name="label_selecciona_ciudad">1. Selecciona la Ciudad:</string>
+    <string name="label_escribe_direccion">2. Escribe la Dirección:</string>
+    <string name="hint_direccion">Plaza de Bolívar</string>
+    <string name="btn_ubicar_calcular">Ubicar y Calcular Envío</string>
+    <string name="title_visor_cobertura">Visor de Cobertura</string>
+    <string name="subtitle_visor_cobertura">Ubicación exacta del punto de entrega</string>
+    <string name="titulo_detalle_envio">📦 Detalle del Envío</string>
+    <string name="boceto_mapa">Boceto de mapa</string>
+
+    <string-array name="ciudades_array">
+        <item>Seleccione una ciudad...</item>
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Bucaramanga</item>
+        <item>Cartagena</item>
+        <item>Pereira</item>
+        <item>Manizales</item>
+        <item>Cúcuta</item>
+        <item>Ibagué</item>
+        <item>Santa Marta</item>
+        <item>Pasto</item>
+        <item>Villavicencio</item>
+        <item>Montería</item>
+        <item>Armenia</item>
+    </string-array>
 </resources>
