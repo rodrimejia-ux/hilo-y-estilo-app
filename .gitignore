@@ -1,0 +1,35 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Gradle
+.gradle/
+build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# Configuracion local del equipo (NO subir)
+local.properties
+/local.properties
+
+# Credenciales y firmas (NO subir)
+*.jks
+*.keystore
+*.p12
+keystore.properties
+signing.properties
+.env
+*.env.local
+google-services.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
