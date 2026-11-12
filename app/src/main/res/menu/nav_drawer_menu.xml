@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:title="@string/menu_inicio" />
+
+    <item
+        android:id="@+id/nav_login"
+        android:title="@string/menu_login" />
+
+    <item
+        android:id="@+id/nav_add_product"
+        android:title="@string/menu_add_product" />
+
+    <item
+        android:id="@+id/nav_ventas"
+        android:title="@string/menu_ventas">
+        <menu>
+            <item
+                android:id="@+id/nav_registro_compras"
+                android:title="@string/menu_registro_compras" />
+            <item
+                android:id="@+id/nav_registro_ventas"
+                android:title="@string/menu_registro_ventas" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_carrito"
+        android:title="@string/menu_carrito" />
+
+    <item
+        android:id="@+id/nav_insumos"
+        android:title="@string/menu_insumos">
+        <menu>
+            <item
+                android:id="@+id/nav_tipos_tela"
+                android:title="@string/menu_tipos_tela" />
+            <item
+                android:id="@+id/nav_accesorios"
+                android:title="@string/menu_accesorios" />
+            <item
+                android:id="@+id/nav_hilo"
+                android:title="@string/menu_hilo" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_envios"
+        android:title="@string/menu_envios">
+        <menu>
+            <item
+                android:id="@+id/nav_nacionales"
+                android:title="@string/menu_nacionales" />
+            <item
+                android:id="@+id/nav_internacionales"
+                android:title="@string/menu_internacionales" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_contacto"
+        android:title="@string/menu_contacto" />
+
+</menu>

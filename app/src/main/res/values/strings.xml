@@ -1,4 +1,30 @@
 <resources>
+    <string name="app_name">hilo y estilo app</string>
+    <string name="hilo_y_estilo">Hilo Y Estilo</string>
+    <string name="select_nav_option">Selecciona una opción del menú de navegación</string>
+    <string name="selected_section">Sección seleccionada: %s</string>
+    <string name="nav_toast_prefix">Navegando a: %s</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_login">Inicio de sesión</string>
+    <string name="menu_add_product">Añadir producto</string>
+    <string name="menu_ventas">Ventas</string>
+    <string name="menu_registro_compras">Registro de Compras</string>
+    <string name="menu_registro_ventas">Registro de Ventas</string>
+    <string name="menu_insumos">Categoría de insumos</string>
+    <string name="menu_tipos_tela">Tipos de tela</string>
+    <string name="menu_accesorios">Accesorios</string>
+    <string name="menu_hilo">Hilo</string>
+    <string name="menu_envios">Envíos</string>
+    <string name="menu_nacionales">Nacionales</string>
+    <string name="menu_internacionales">Internacionales</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_cuenta">Cuenta</string>
+    <string name="menu_carrito">Carrito / Ícono de compra</string>
+    <string name="nav_header_subtitle">Moda &amp; Confección a tu medida</string>
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+</resources>
+
     <string name="app_name">Hilo y Estilo</string>
     <string name="title_envios_nacionales">📍 Envíos Nacionales</string>
     <string name="label_selecciona_ciudad">1. Selecciona la Ciudad:</string>
