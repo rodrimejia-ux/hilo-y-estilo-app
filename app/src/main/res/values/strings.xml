@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">hilo y estilo app</string>
+    <string name="btn_catalogo">Ver Catálogo</string>
+    <string name="bg_hero_gradient">Ver Catálogo</string>
+
+</resources>
+
     <string name="hilo_y_estilo">Hilo Y Estilo</string>
     <string name="select_nav_option">Selecciona una opción del menú de navegación</string>
     <string name="selected_section">Sección seleccionada: %s</string>
