@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiloYEstiloApp">
         <activity
+
             android:name=".tarjetas"
+
+            android:name=".GestionTextilActivity"
+
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -21,11 +27,52 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name=".DisponiblesActivity"
+
+            android:name=".CatalogoTelas"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ItemTela"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".FormularioTelas"
+
+
+
+            android:name=".Anadir_Producto"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Ventas"
+
+            android:name=".Registro_empresa"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".registro_usuario"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Carrito"
+
+            android:name=".Envios_nacionales"
+
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+
+        <activity
+            android:name=".ContactoActivity"
+
+
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
