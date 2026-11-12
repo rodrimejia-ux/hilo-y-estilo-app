@@ -4,31 +4,29 @@ plugins {
 
 android {
     namespace = "com.rodrigo.hiloyestiloapp"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.rodrigo.hiloyestiloapp"
         minSdk = 27
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    android {
-        // ... otras configuraciones como namespace, compileSdk, etc.
 
-        buildFeatures {
-            viewBinding = true
-        }
+    buildFeatures {
+        viewBinding = true
     }
+
     buildTypes {
         release {
-            optimization {
-                enable = false
-            }
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

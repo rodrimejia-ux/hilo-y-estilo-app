@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Título centrado -->
+    <TextView
+        android:id="@+id/tvTituloCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cerrar sesión"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo centrado -->
+    <TextView
+        android:id="@+id/tvSubtituloCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="¿Seguro que quieres cerrar sesión?"
+        android:textColor="#757575"
+        android:textSize="14sp" />
+
+    <!-- Botones horizontales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botón Cancelar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelar"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#CCCCCC"
+            android:paddingVertical="12dp"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:strokeColor="#B0B0B0"
+            app:strokeWidth="1dp" />
+
+        <!-- Botón Confirmar Cerrar Sesión -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmarCerrar"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F5F5F5"
+            android:paddingVertical="12dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:strokeColor="#CCCCCC"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
