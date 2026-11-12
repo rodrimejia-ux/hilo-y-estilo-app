@@ -17,6 +17,20 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    android {
+        // ... otras configuraciones como namespace, compileSdk, etc.
+
+
+    buildFeatures {
+        viewBinding = true
+
+    }
+
+
+        buildFeatures {
+            viewBinding = true
+        }
+    }
 
     buildFeatures {
         viewBinding = true
@@ -32,6 +46,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

@@ -24,3 +24,47 @@
     <string name="navigation_drawer_open">Abrir menú de navegación</string>
     <string name="navigation_drawer_close">Cerrar menú de navegación</string>
 </resources>
+
+    <string name="app_name">Hilo y Estilo</string>
+    <string name="title_envios_nacionales">📍 Envíos Nacionales</string>
+    <string name="label_selecciona_ciudad">1. Selecciona la Ciudad:</string>
+    <string name="label_escribe_direccion">2. Escribe la Dirección:</string>
+    <string name="hint_direccion">Plaza de Bolívar</string>
+    <string name="btn_ubicar_calcular">Ubicar y Calcular Envío</string>
+    <string name="title_visor_cobertura">Visor de Cobertura</string>
+    <string name="subtitle_visor_cobertura">Ubicación exacta del punto de entrega</string>
+    <string name="titulo_detalle_envio">📦 Detalle del Envío</string>
+    <string name="boceto_mapa">Boceto de mapa</string>
+
+    <string-array name="ciudades_array">
+        <item>Seleccione una ciudad...</item>
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Bucaramanga</item>
+        <item>Cartagena</item>
+        <item>Pereira</item>
+        <item>Manizales</item>
+        <item>Cúcuta</item>
+        <item>Ibagué</item>
+        <item>Santa Marta</item>
+        <item>Pasto</item>
+        <item>Villavicencio</item>
+        <item>Montería</item>
+        <item>Armenia</item>
+    </string-array>
+    <string name="titulo_centro_atencion">HILO Y ESTILO - CENTRO DE ATENCIÓN</string>
+    <string name="titulo_nuestra_ubicacion">Nuestra Ubicación</string>
+    <string name="subtitulo_nuestra_ubicacion">Visítanos en el corazón de Popayán</string>
+    <string name="direccion_fisica">📍 Barrio Pueblillo, Popayán - Cauca</string>
+    <string name="correo_corporativo">✉️ hiloyestilo.pop@gmail.com</string>
+    <string name="horario_atencion">⏰ Lunes a Viernes: 8:00 AM - 6:00 PM | Sábados: 9:00 AM - 2:00 PM</string>
+    <string name="btn_abrir_maps">ABRIR EN MAPS</string>
+    <string name="titulo_buzon_sugerencias">Buzón de Sugerencias</string>
+    <string name="subtitulo_buzon_sugerencias">Déjanos tus dudas o comentarios para mejorar</string>
+    <string name="hint_nombre_completo">Nombre Completo</string>
+    <string name="hint_correo">Tu correo @gmail.com</string>
+    <string name="hint_mensaje">Escribe tu mensaje aquí...</string>
+    <string name="btn_enviar_comentario">ENVIAR COMENTARIO</string>
+</resources>
