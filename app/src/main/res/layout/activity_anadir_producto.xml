@@ -1,127 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0F172A"
-    android:padding="16dp">
+    android:fillViewport="true"
+    tools:context=".Anadir_Producto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Publicar Nuevo Insumo"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="16dp"/>
-
-        <EditText
-            android:id="@+id/etEmpresa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nombre de la empresa"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#94A3B8"
-            android:backgroundTint="#334155"
-            android:layout_marginBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/etProducto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nombre del insumo"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#94A3B8"
-            android:backgroundTint="#334155"
-            android:layout_marginBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/etDescripcion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Descripción corta"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#94A3B8"
-            android:backgroundTint="#334155"
-            android:layout_marginBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/etDetalles"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Detalles adicionales"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#94A3B8"
-            android:backgroundTint="#334155"
-            android:layout_marginBottom="10dp"/>
-
-        <EditText
-            android:id="@+id/etPrecio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Precio o compra mínima"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#94A3B8"
-            android:backgroundTint="#334155"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnGenerar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Generar Ficha de Producto"
-            android:backgroundTint="#D97706"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="24dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Productos Añadidos"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="12dp"/>
+        <include layout="@layout/toolbar_navigation" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#1E293B"
-            android:padding="16dp">
+            android:padding="20dp">
 
             <TextView
-                android:id="@+id/tvCardEmpresa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre Empresa"
+                android:text="Publicar Nuevo Insumo"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp"/>
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:id="@+id/tvCardDetalles"
+            <EditText
+                android:id="@+id/etEmpresa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detalles del producto aparecerán aquí..."
-                android:textColor="#94A3B8"
-                android:textSize="14sp"
-                android:layout_marginBottom="8dp"/>
+                android:hint="Nombre de la empresa"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:backgroundTint="#334155"
+                android:autofillHints="name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del insumo"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:backgroundTint="#334155"
+                android:autofillHints="none"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción corta"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:backgroundTint="#334155"
+                android:autofillHints="none"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etDetalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Detalles adicionales"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:backgroundTint="#334155"
+                android:autofillHints="none"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio o compra mínima"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:backgroundTint="#334155"
+                android:autofillHints="none"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnGenerar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generar Ficha de Producto"
+                android:backgroundTint="#D97706"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="24dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Información cargada desde la tarjeta."
-                android:textColor="#64748B"
-                android:textSize="12sp"/>
+                android:text="Productos Añadidos"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1E293B"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvCardEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Empresa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvCardDetalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detalles del producto aparecerán aquí..."
+                    android:textColor="#94A3B8"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Información cargada desde la tarjeta."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

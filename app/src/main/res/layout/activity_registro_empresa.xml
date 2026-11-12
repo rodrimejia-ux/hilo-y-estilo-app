@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0B1A30"
@@ -11,186 +12,194 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="120dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/logo"
-            android:contentDescription="Logo Hilo y Estilo" />
+        <include layout="@layout/toolbar_navigation" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Registro de Empresa"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="24dp" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre de la empresa"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="Ej: Textiles Colombia"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="textPersonName"
-            android:layout_marginBottom="16dp" />
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo"
+                android:contentDescription="Logo Hilo y Estilo" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NIT"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de Empresa"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="Ej: 900123456-7"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="text"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de la empresa"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo electrónico"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Ej: Textiles Colombia"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="empresa@email.com"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="textEmailAddress"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Teléfono"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Ej: 900123456-7"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="3001234567"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="phone"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo electrónico"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dirección"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="empresa@email.com"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="Ciudad, dirección"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="textPostalAddress"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contraseña"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="3001234567"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="****"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="textPassword"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirmar contraseña"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:layout_marginBottom="6dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Ciudad, dirección"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPostalAddress"
+                android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/bg_edittext"
-            android:hint="****"
-            android:textColorHint="#8A9BA8"
-            android:textColor="#1A1A1A"
-            android:textSize="14sp"
-            android:paddingHorizontal="16dp"
-            android:inputType="textPassword"
-            android:layout_marginBottom="24dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Registrar Empresa"
-            android:textColor="#FFFFFF"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:backgroundTint="#0022CC"
-            app:cornerRadius="8dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="****"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="16dp" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmar contraseña"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="****"
+                android:textColorHint="#8A9BA8"
+                android:textColor="#1A1A1A"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Registrar Empresa"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#0022CC"
+                app:cornerRadius="8dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
