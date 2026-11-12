@@ -24,7 +24,13 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name=".MainActivity"
+            android:name=".Centrodeatencion"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ContactoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
