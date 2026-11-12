@@ -45,6 +45,10 @@
             android:windowSoftInputMode="adjustResize" />
 
         <activity
+            android:name=".PerfilMenuActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".ContactoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
