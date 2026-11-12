@@ -14,7 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiloYEstiloApp">
         <activity
+
+            android:name=".tarjetas"
+
             android:name=".GestionTextilActivity"
+
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -23,6 +27,8 @@
             </intent-filter>
         </activity>
         <activity
+
+            android:name=".DisponiblesActivity"
 
             android:name=".CatalogoTelas"
             android:exported="false"
@@ -53,18 +59,23 @@
             android:name=".Carrito"
 
             android:name=".Envios_nacionales"
+
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+
+
         <activity
             android:name=".ContactoActivity"
 
 
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
