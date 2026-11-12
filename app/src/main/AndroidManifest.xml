@@ -24,6 +24,13 @@
         </activity>
         <activity
 
+
+            android:name=".Anadir_Producto"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Ventas"
+
             android:name=".Registro_empresa"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
