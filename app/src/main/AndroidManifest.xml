@@ -24,6 +24,17 @@
         </activity>
         <activity
 
+            android:name=".CatalogoTelas"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ItemTela"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".FormularioTelas"
+
+
 
             android:name=".Anadir_Producto"
             android:exported="false"
@@ -50,6 +61,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ContactoActivity"
+
 
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
