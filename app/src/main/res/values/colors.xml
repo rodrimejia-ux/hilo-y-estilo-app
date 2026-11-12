@@ -2,8 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <!-- Centro de Atención Palette -->
+    <color name="bg_main">#0A192F</color>
+    <color name="bg_card">#0F2B48</color>
+    <color name="border_card">#1E4976</color>
+    <color name="primary_blue">#1865F2</color>
+    <color name="primary_blue_pressed">#104EB8</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="text_dark">#1A1A1A</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_secondary">#D0E1F9</color>
+    <color name="text_hint">#888888</color>
+    <color name="accent_gold">#FFB703</color>
+    <color name="green_success">#2EC4B6</color>
     <color name="navy_background">#0B2E59</color>
     <color name="header_blue">#06224A</color>
     <color name="content_bg">#E8ECEF</color>
