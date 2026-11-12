@@ -23,6 +23,17 @@
             </intent-filter>
         </activity>
         <activity
+
+            android:name=".Registro_empresa"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".registro_usuario"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Carrito"
+
             android:name=".Envios_nacionales"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
@@ -32,6 +43,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ContactoActivity"
+
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
