@@ -17,7 +17,13 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    android {
+        // ... otras configuraciones como namespace, compileSdk, etc.
 
+        buildFeatures {
+            viewBinding = true
+        }
+    }
     buildTypes {
         release {
             optimization {
